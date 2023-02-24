@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub-menu-2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        background-color: blue;
+        line-height: 50px;
+        border: 0px solid white;
+        color: white;
+        text-align: center;
+        height: 50px;
+        width: 150px;
+        float: left;
+        margin: 2px;
+        font-size:15px;
+        position: relative;
+    }
+    ul li:hover{
+        background-color: blueviolet;
+    }
+    ul ul{
+        display: none;
+    }
+    ul li:hover >ul{
+        display: block;
+    }
+    ul ul ul{
+        margin-left: 150px;
+        top: 0px;
+        position: absolute;
+    }
+    .fa{
+        margin: 5px;
+    }
+
+</style>
+<body>
+    <ul>
+        <li><i class="fa fa-home" aria-hidden="true"></i>HOME</li>
+        <li><i class="fa fa-clone" aria-hidden="true"></i>ABOUNT</li>
+        <li><i class="fa fa-users" aria-hidden="true"></i>INTERTENMENT
+            <ul>
+                <li>HOLLYWOOD</li>
+                <li>BOLLYWOOD
+                    <ul>
+                        <li>FARZI</li>
+                        <li>ROWDY RATHOD</li>
+                        <li>RAJ KUMAR 2</li>
+                    </ul>
+                </li>
+                <li>TOLLYWOOD</li>
+
+            </ul>
+        </li>
+        <li><i class="fa fa-phone" aria-hidden="true"></i>CONTACT</li>
+
+    </ul>
+</body>
+</html>
