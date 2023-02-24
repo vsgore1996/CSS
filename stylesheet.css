@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(book.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menubar{
+    background-color:skyblue;
+    text-align: center;
+    height: 50px;
+}
+.menubar ul{
+    display: inline-block;
+    list-style: none;
+    color:brown;
+}
+.menubar ul li{
+    
+margin: 2px;
+padding: 10px;
+width:150px;
+float: left;
+}
+.menubar ul li a {
+    text-decoration: none;
+
+}
+.sub-menu-1 ul{
+    padding: 0px;
+}
+.sub-menu-1 ul li{
+    display: none;
+    color:red;
+    padding: 0px; background-color: aquamarine;
+    height:50px; line-height: 50px;
+ }  
+ .menubar ul li:hover .sub-menu-1 ul li{
+    display: block;
+    background-color: aquamarine;
+    height:50px;
+    line-height: 50px;
+ } 
+.menubar .fa
+{
+    margin-right: 8px;
+}	
